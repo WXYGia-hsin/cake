@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>好吃的蛋糕</title>
+    <link rel="stylesheet" href="css/cake.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet"  type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="lib/jquery-2.1.1/jquery.min.js" type="text/javascript " charset="utf-8 "></script>
+	<script src="js/jquery-1.11.0.js" type="text/javascript " charset="utf-8 "></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation" style="background-color:#F2DEDE">
+	<div class="container-fluid">
+	<div style="">
+		<ul class="nav navbar-nav" style="font-size:large;">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="about.html">关于我们</a></li>
+			<li class="active"><a href="product.html">产品中心</a></li>
+			<li><a href="activity.html">活动专题</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+		</ul>
+	<ul class="nav navbar-nav navbar-right">
+      <form action="" method="get">
+        <div id="search-box">
+          <input name="" type="submit" value="搜索" class="button" />
+          <input name="" type="text" class="input-box" />
+        </div>
+          欢迎您 <span id="msg"></span>
+          <script type="text/javascript">
+              var s=location.href;
+              var index=s.lastIndexOf("?");
+              var username="";
+              if(index==-1){
+                  username="游客";
+              }else{
+                  var str=s.substring(index+1,s.length);
+                  username=str.split("=")[1]
+              }
+              $("#msg").html(username);
+          </script>
+      </form>
+    </ul>
+   
+	</div>
+	</div>
+</nav>
+
+<div class="wrap" style="">
+			<ul class="list">
+				<li class="item active"><img src="image/4.jpg" alt=""><li>
+				<li class="item"><img src="image/5.jpg" alt=""></li>
+				<li class="item"> <img src="image/6.jpg" alt=""></li>
+				<li class="item"><img src="image/7.jpg" alt=""></li>
+				
+			</ul>
+			<ul class="pointList">
+				<li class="point active" data-index="0"></li>
+				<li class="point" data-index="1"></li>
+				<li class="point" data-index="2"></li>
+				<li class="point" data-index="3"></li>
+				
+			</ul>
+		
+</div>
+
+
+
+<div class='container-fluid'>
+  <h2 class='page-header' style="width:150px; margin-left: auto; margin-right: auto;border-bottom: 0;color: #DCA7A7;">产品分类</h2>
+
+  <div class='tabbable tabs-left' >
+  
+    <!--
+      选项卡：通过BS的类来控制选项卡的样式
+    -->
+    <ul class='nav nav-pills' role="tablist" style="width:440px; margin-left: auto; margin-right: auto;">
+      <li class='active'><a href='#product1' data-toggle='pill'>提达米苏</a></li>
+      <li><a href='#product2' data-toggle='pill'>布丁</a></li>
+      <li><a href='#product3' data-toggle='pill'>芝士蛋糕</a></li>
+      <li><a href='#product4' data-toggle='pill'>西式甜点</a></li>
+      <li><a href='#product5' data-toggle='pill'>马卡龙</a></li>
+    </ul>
+    
+  
+    <div class='tab-content'>
+     <div class='tab-pane fade in active' id='product1'>
+     	<div id="prform" >
+     	<form>
+     		<table style="margin-left: auto;margin-right:10px;margin-top:30px;" width="1400px" >
+     		<tr>
+     			<td><img id="img"  src="image/Ti/80ef1e0c89b8eaca50b86ad9a752ac34.jpg"/></br>
+     			<h4>原味提达米苏</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/Ti/867cff9c95b3d9ece74b7d3d606fc1e4.jpg"/> </br>
+     			<h4>咖啡提达米苏</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/Ti/e5bd87b18d25fa2658a312930bcecda7.jpg" /></br>
+     			<h4>奶昔提达米苏</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/Ti/cdbe3e1b09bd861bc6300ea068f7e031.jpg" /></br>
+     			<h4>抹茶提达米苏</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     
+     		<tr>
+     			<td><img id="img" src="image/Ti/5dc972a3e40ea44a0b030f349980317c.jpg" /></br>
+     			<h4>冰淇淋提达米苏</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/Ti/5801332091f4c6be7b81840b8933556a.jpg" /></br>
+     			<h4>奶油提达米苏</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/Ti/763c9463e1aba78916088257993ac01f.jpg" /></br>
+     			<h4>草莓提达米苏</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/Ti/fe2b789ac9375b8354d2a1a94c82f695.jpg" /></br>
+     			<h4>提达米苏蛋糕</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     		</table>
+     	</form>
+     	</div>
+     </div>
+      <div class='tab-pane fade' id='product2'>     	<div id="prform" >
+     	<form>
+     		<table style="margin-left: auto;margin-right:10px;margin-top:30px;" width="1400px" >
+     		<tr>
+     			<td><img id="img"  src="image/pudding/ee1f088eeccfce821348ec974e6e4422.jpg"/></br>
+     			<h4>蓝莓布丁</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/pudding/1f5af44f0191101f334712999ec40a08.jpg"/> </br>
+     			<h4>牛奶彩虹布丁</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/pudding/13f0372526af4cf934827a8d7e4cac1a.jpg" /></br>
+     			<h4>樱花布丁</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/pudding/6e8976f4802c1e5cd93fbed21f3b0cf8.jpg" /></br>
+     			<h4>水果布丁</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     
+     		<tr>
+     			<td><img id="img" src="image/pudding/5370b7b5bcc7aaf92ee885ae02c5d424.jpg" /></br>
+     			<h4>草莓布丁</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/pudding/7fb57b0bf4b81afd5f3f62b3b672f6cf.jpg" /></br>
+     			<h4>红豆布丁</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/pudding/a77f235eac46d1a5bb4c7f76115c44d6.jpg" /></br>
+     			<h4>蔬菜布丁</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/pudding/ef955ae658a54c49e9df7a2e5c5f3816.jpg" /></br>
+     			<h4>原味布丁</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     		</table>
+     	</form>
+     	</div></div>
+      <div class='tab-pane fade' id='product3'>     	<div id="prform" >
+     	<form>
+     		<table style="margin-left: auto;margin-right:10px;margin-top:30px;" width="1400px" >
+     		<tr>
+     			<td><img id="img"  src="image/cheese/8db3f696cf99f2c2c66d542be6f1291b.jpg"/></br>
+     			<h4>蓝莓芝士蛋糕</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/cheese/67c2fddf46ecf334300b4b13831d3139.jpg"/> </br>
+     			<h4>草莓芝士</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/cheese/e64596a64f26c6bb84a258ef20a5371f.jpg" /></br>
+     			<h4>原味芝士</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/cheese/fec915ead66ba82997a4521c219eb71e.jpg" /></br>
+     			<h4>水果芝士</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     
+     		<tr>
+     			<td><img id="img" src="image/cheese/5ca3255f78ebb6a5ef0efe470c8eeba9.jpg" /></br>
+     			<h4>奶油芝士</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/cheese/d985d5770576be98ebd7504e035dece6.jpg" /></br>
+     			<h4>黄油芝士</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/cheese/c307987ecfb7d5fe1471686d06eeee89.jpg" /></br>
+     			<h4>樱桃芝士</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/cheese/8a33cf17f7671d65c4952f867f7744c2.jpg" /></br>
+     			<h4>芝士蛋糕</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     		</table>
+     	</form>
+     	</div></div>
+      <div class='tab-pane fade' id='product4'>     	<div id="prform" >
+     	<form>
+     		<table style="margin-left: auto;margin-right:10px;margin-top:30px;" width="1400px" >
+     		<tr>
+     			<td><img id="img"  src="image/mousse/095d287fcbbe0c8e57a8b83582f5cf75.jpg"/></br>
+     			<h4>巧克力甜点</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/mousse/0bee60841471ac31fb32899a565dbece.jpg"/> </br>
+     			<h4>香甜慕斯</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/mousse/0c0504d933cbc7eada5071ddab5bacfa.jpg" /></br>
+     			<h4>咖啡甜点</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/mousse/176404f11cd9902668ddd019fa68e47c.jpg" /></br>
+     			<h4>草莓奶油</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     
+     		<tr>
+     			<td><img id="img" src="image/mousse/440c77e1bfb6a82c76d38e81749d57f9.png" /></br>
+     			<h4>香芋白巧克力</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/mousse/9fa7ae22c2fef52f6cad53d5056c2aa5.jpg" /></br>
+     			<h4>早餐甜饼</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/mousse/ceaa522eb755814775454f26a2e658ed.jpg" /></br>
+     			<h4>白巧克力慕斯</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/mousse/df132d2affec4ce141852d67144422cc.jpg" /></br>
+     			<h4>甜点杯</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     		</table>
+     	</form>
+     	</div></div>
+      <div class='tab-pane fade' id='product5'>     	
+      	<div id="prform" >
+     	<form>
+     		<table style="margin-left: auto;margin-right:10px;margin-top:30px;" width="1400px" >
+     		<tr>
+     			<td><img id="img"  src="image/Macaroon/290930fa03327da67ea23509a431041a.jpg"/></br>
+     			<h4>草莓马卡龙</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/Macaroon/2adb70af165b5b71745a9729e4c96349.jpg"/> </br>
+     			<h4>草莓巧克力马卡龙</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/Macaroon/36ce0c59c752505f8624ea86dd7cc1b0.jpg" /></br>
+     			<h4>香橙草莓马卡龙</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img  id="img" src="image/Macaroon/482a245d7e547f34f0ccb356c8c046ca.jpeg" /></br>
+     			<h4>樱花马卡龙</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     
+     		<tr>
+     			<td><img id="img" src="image/Macaroon/59707bc79f5a13408964b517953d6ffa.jpeg" /></br>
+     			<h4>烘焙马卡龙</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/Macaroon/c771dd2f26f173f09089619acad4b1d1.jpg" /></br>
+     			<h4>马卡龙</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/Macaroon/e79c529f7d69877505ab5bda74c12cd3.jpeg" /></br>
+     			<h4>奶油马卡龙</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     			<td><img id="img" src="image/Macaroon/fde867268d7355ebae803350ae5a9583.jpg" /></br>
+     			<h4>纸盒马卡龙</h4>	
+     	        <a href="" /><img id="g" src="image/0d9fdeea30eb2f7ce40585ddc2416dba.jpg" /> </a>
+     			</td>
+     		</tr>
+     		</table>
+     	</form>
+     	</div></div>
+    </div> 
+  </div>
+    
+</div>
+
+<div align="center" id="icon">
+   <a href="http://food-100.view.sitestar.cn/"><img  src="image/11.png"/></a>
+   <img src="image/12.png"/>
+   <img src="image/13.png"/>
+   
+</div>
+
+
+<div id="footer">
+  <div class="footer">
+    联系Contact <br />
+    好吃的蛋糕店<br />
+    电话：18846420290 座机：88888888<br />
+    邮箱：2223775729@qq.com  公司地点：哈尔滨理工东区3公寓313
+  </div>
+</div>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js " type="text/javascript " ></script>
+<script src="js/showlogin.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
